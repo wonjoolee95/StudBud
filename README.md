@@ -1,11 +1,11 @@
-# StudBud <img src="https://github.com/favicon.ico" width="30">
+# StudBud <img src="https://github.com/wonjoolee95/StudBud/blob/master/img/logoBig.png" width="30">
 
 
-StudBud is hosted [here at studbud.x10host.com](http://studbud.x10host.com/index.html).
+### StudBud is hosted [here at studbud.x10host.com](http://studbud.x10host.com/index.html).
 
+___
 
-StudBud is an online platform that allows students to easiily find study partners in courses of their choices. The application's simple
-yet effective interface provides smooth navigation and use of its functionalities. 
+StudBud is an online platform that allows UCI students to easiily find study partners in courses of their choices. The application's simple yet effective interface provides smooth navigation and use of its functionalities. 
 
 
 Students can select and list themselves in various courses or choose a study partner already on the list. Student can also send an
