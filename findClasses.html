@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- No cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title>StudBud | Home</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="icon" href="img/logoBig.png">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="index.html">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="findClasses.html">Find Classes</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    
+    <div class="container">
+        <!-- Title -->
+<!--
+        <div class="row">
+            <div class="jumbotron col-xs-12">
+                <h2>Find Your Class</h2>
+                <p>Choose any class you want to study!</p>
+            </div>
+        </div>
+-->
+    
+        <br>
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/python.png" alt="">
+                    <div class="caption">
+                        <h2>ICS 31</h2>
+                        <h5>Winter 2016</h5>
+                        <p>Introduction to Programming</p>
+                        <br>
+
+                        
+                            <form action="display_students.php" method="post" class="form-inline">
+                                <input type="hidden" name="class_name" value="ICS 31">
+                                <button type="submit" class="btn btn-primary">Buddies</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal31">Join</button>
+                            </form>
+                            
+                            
+                            
+                            
+                            <!-- Modal -->
+                            <div id="myModal31" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Information</h4>
+                                        </div>
+                                    <div class="modal-body">
+                                            
+                                    
+
+                                    <form action="add_student-1.1.php" method="post">
+    
+                                            <!-- Form  -->
+                                            <div class="form-group row">
+                                                <div class="col-xs-12">
+                                                    <input class="form-control" type="Class Name" value="ICS 31" name="class_name" readonly>
+                                                </div>
+                                            </div>    
+                                            
+                                            <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="First Name" placeholder="First Name" name="first_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Last Name" placeholder="Last Name" name="last_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="email" placeholder="Email (e.g. panteater@uci.edu)" name="email">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Topic" placeholder="Topic (e.g. Dynamic Programming)" name="topic">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="tel" placeholder="Time Availability (e.g. T/TH 2-4pm)" name="availability">
+                                          </div>
+                                        </div>
+     
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-default">Save</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </form>
+
+
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/python.png" alt="">
+                    <div class="caption">
+                        <h2>ICS 32</h2>
+                        <h5>Winter 2016</h5>
+                        <p>Progamming with Software Libraries</p>
+                        <br>
+
+                        
+                            <form action="display_students.php" method="post" class="form-inline">
+                                <input type="hidden" name="class_name" value="ICS 32">
+                                <button type="submit" class="btn btn-primary">Buddies</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal32">Join</button>
+                            </form>
+                            
+                            
+                            
+                            
+                            <!-- Modal -->
+                            <div id="myModal32" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Information</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            
+                                            
+    
+                                            <br>
+                                    <form action="add_student-1.1.php" method="post">
+    
+                                            <!-- Form  -->
+                                            <div class="form-group row">
+                                                <div class="col-xs-12">
+                                                    <input class="form-control" type="Class Name" value="ICS 32" name="class_name" readonly>
+                                                </div>
+                                            </div>    
+                                            
+                                            <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="First Name" placeholder="First Name" name="first_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Last Name" placeholder="Last Name" name="last_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="email" placeholder="Email (e.g. panteater@uci.edu)" name="email">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Topic" placeholder="Topic (e.g. Dynamic Programming)" name="topic">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="tel" placeholder="Time Availability (e.g. T/TH 2-4pm)" name="availability">
+                                          </div>
+                                        </div>
+     
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-default">Save</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/python.png" alt="">
+                    <div class="caption">
+                        <h2>ICS 33</h2>
+                        <h5>Winter 2016</h5>
+                        <p>Intermediate Programming</p>
+                        <br>
+
+                        
+                            <form action="display_students.php" method="post" class="form-inline">
+                                <input type="hidden" name="class_name" value="ICS 33">
+                                <button type="submit" class="btn btn-primary">Buddies</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal33">Join</button>
+                            </form>
+                            
+                            
+                            
+                            
+                            <!-- Modal -->
+                            <div id="myModal33" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Information</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            
+                                                
+                                            <br>
+                                    <form action="add_student-1.1.php" method="post">
+    
+                                            <!-- Form  -->
+                                            <div class="form-group row">
+                                                <div class="col-xs-12">
+                                                    <input class="form-control" type="Class Name" value="ICS 33" name="class_name" readonly>
+                                                </div>
+                                            </div>    
+                                            
+                                            <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="First Name" placeholder="First Name" name="first_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Last Name" placeholder="Last Name" name="last_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="email" placeholder="Email (e.g. panteater@uci.edu)" name="email">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Topic" placeholder="Topic (e.g. Dynamic Programming)" name="topic">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="tel" placeholder="Time Availability (e.g. T/TH 2-4pm)" name="availability">
+                                          </div>
+                                        </div>
+     
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-default">Save</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+       
+            
+            
+            
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/c++.png" alt="">
+                    <div class="caption">
+                        <h2>ICS 45C</h2>
+                        <h5>Winter 2016</h5>
+                        <p>Programming in C++</p>
+                        <br>
+
+                        
+                            <form action="display_students.php" method="post" class="form-inline">
+                                <input type="hidden" name="class_name" value="ICS 45C">
+                                <button type="submit" class="btn btn-primary">Buddies</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal45C">Join</button>
+                            </form>
+                            
+                            
+                            
+                            
+                            <!-- Modal -->
+                            <div id="myModal45C" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Information</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            
+                                                
+                                            <br>
+                                    <form action="add_student-1.1.php" method="post">
+    
+                                            <!-- Form  -->
+                                            <div class="form-group row">
+                                                <div class="col-xs-12">
+                                                    <input class="form-control" type="Class Name" value="ICS 45C" name="class_name" readonly>
+                                                </div>
+                                            </div>    
+                                            
+                                            <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="First Name" placeholder="First Name" name="first_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Last Name" placeholder="Last Name" name="last_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="email" placeholder="Email (e.g. panteater@uci.edu)" name="email">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Topic" placeholder="Topic (e.g. Dynamic Programming)" name="topic">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="tel" placeholder="Time Availability (e.g. T/TH 2-4pm)" name="availability">
+                                          </div>
+                                        </div>
+     
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-default">Save</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/java.png" alt="">
+                    <div class="caption">
+                        <h2>ICS 45J</h2>
+                        <h5>Winter 2016</h5>
+                        <p>Programming in Java</p>
+                        <br>
+
+                        
+                            <form action="display_students.php" method="post" class="form-inline">
+                                <input type="hidden" name="class_name" value="ICS 45J">
+                                <button type="submit" class="btn btn-primary">Buddies</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal45J">Join</button>
+                            </form>
+                            
+                            
+                            
+                            
+                            <!-- Modal -->
+                            <div id="myModal45J" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Information</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            
+                                                
+                                            <br>
+                                    <form action="add_student-1.1.php" method="post">
+    
+                                            <!-- Form  -->
+                                            <div class="form-group row">
+                                                <div class="col-xs-12">
+                                                    <input class="form-control" type="Class Name" value="ICS 45J" name="class_name" readonly>
+                                                </div>
+                                            </div>    
+                                            
+                                            <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="First Name" placeholder="First Name" name="first_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Last Name" placeholder="Last Name" name="last_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="email" placeholder="Email (e.g. panteater@uci.edu)" name="email">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Topic" placeholder="Topic (e.g. Dynamic Programming)" name="topic">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="tel" placeholder="Time Availability (e.g. T/TH 2-4pm)" name="availability">
+                                          </div>
+                                        </div>
+     
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-default">Save</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/clogo.png" alt="">
+                    <div class="caption">
+                        <h2>ICS 53</h2>
+                        <h5>Winter 2016</h5>
+                        <p>Principle in System Design</p>
+                        <br>
+
+                        
+                            <form action="display_students.php" method="post" class="form-inline">
+                                <input type="hidden" name="class_name" value="ICS 53">
+                                <button type="submit" class="btn btn-primary">Buddies</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal53">Join</button>
+                            </form>
+                            
+                            
+                            
+                            
+                            <!-- Modal -->
+                            <div id="myModal53" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Information</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            
+                                                
+                                            <br>
+                                    <form action="add_student-1.1.php" method="post">
+    
+                                            <!-- Form  -->
+                                            <div class="form-group row">
+                                                <div class="col-xs-12">
+                                                    <input class="form-control" type="Class Name" value="ICS 53" name="class_name" readonly>
+                                                </div>
+                                            </div>    
+                                            
+                                            <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="First Name" placeholder="First Name" name="first_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Last Name" placeholder="Last Name" name="last_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="email" placeholder="Email (e.g. panteater@uci.edu)" name="email">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Topic" placeholder="Topic (e.g. Dynamic Programming)" name="topic">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="tel" placeholder="Time Availability (e.g. T/TH 2-4pm)" name="availability">
+                                          </div>
+                                        </div>
+     
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-default">Save</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/c++.png" alt="">
+                    <div class="caption">
+                        <h2>ICS 46</h2>
+                        <h5>Winter 2016</h5>
+                        <p>Data Structures Design and Analysis</p>
+                        <br>
+
+                        
+                            <form action="display_students.php" method="post" class="form-inline">
+                                <input type="hidden" name="class_name" value="ICS 46">
+                                <button type="submit" class="btn btn-primary">Buddies</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal46">Join</button>
+                            </form>
+                            
+                            
+                            
+                            
+                            <!-- Modal -->
+                            <div id="myModal46" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Information</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            
+                                                
+                                            <br>
+                                    <form action="add_student-1.1.php" method="post">
+    
+                                            <!-- Form  -->
+                                            <div class="form-group row">
+                                                <div class="col-xs-12">
+                                                    <input class="form-control" type="Class Name" value="ICS 46" name="class_name" readonly>
+                                                </div>
+                                            </div>    
+                                            
+                                            <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="First Name" placeholder="First Name" name="first_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Last Name" placeholder="Last Name" name="last_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="email" placeholder="Email (e.g. panteater@uci.edu)" name="email">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Topic" placeholder="Topic (e.g. Dynamic Programming)" name="topic">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="tel" placeholder="Time Availability (e.g. T/TH 2-4pm)" name="availability">
+                                          </div>
+                                        </div>
+     
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-default">Save</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/algorithm.png" alt="">
+                    <div class="caption">
+                        <h2>CS 161</h2>
+                        <h5>Winter 2016</h5>
+                        <p>Algorithms Design and Analysis</p>
+                        <br>
+
+                        
+                            <form action="display_students.php" method="post" class="form-inline">
+                                <input type="hidden" name="class_name" value="CS 161">
+                                <button type="submit" class="btn btn-primary">Buddies</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal161">Join</button>
+                            </form>
+                            
+                            
+                            
+                            
+                            <!-- Modal -->
+                            <div id="myModal161" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Information</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            
+                                                
+                                            <br>
+                                    <form action="add_student-1.1.php" method="post">
+    
+                                            <!-- Form  -->
+                                            <div class="form-group row">
+                                                <div class="col-xs-12">
+                                                    <input class="form-control" type="Class Name" value="CS 161" name="class_name" readonly>
+                                                </div>
+                                            </div>    
+                                            
+                                            <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="First Name" placeholder="First Name" name="first_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Last Name" placeholder="Last Name" name="last_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="email" placeholder="Email (e.g. panteater@uci.edu)" name="email">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Topic" placeholder="Topic (e.g. Dynamic Programming)" name="topic">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="tel" placeholder="Time Availability (e.g. T/TH 2-4pm)" name="availability">
+                                          </div>
+                                        </div>
+     
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-default">Save</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/database.png" alt="">
+                    <div class="caption">
+                        <h2>CS 122A</h2>
+                        <h5>Winter 2016</h5>
+                        <p>Introduction to Data Management</p>
+                        <br>
+
+                        
+                            <form action="display_students.php" method="post" class="form-inline">
+                                <input type="hidden" name="class_name" value="CS 122A">
+                                <button type="submit" class="btn btn-primary">Buddies</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal122A">Join</button>
+                            </form>
+                            
+                            
+                            
+                            
+                            <!-- Modal -->
+                            <div id="myModal122A" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Information</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            
+                                                
+                                            <br>
+                                    <form action="add_student-1.1.php" method="post">
+    
+                                            <!-- Form  -->
+                                            <div class="form-group row">
+                                                <div class="col-xs-12">
+                                                    <input class="form-control" type="Class Name" value="CS 122A" name="class_name" readonly>
+                                                </div>
+                                            </div>    
+                                            
+                                            <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="First Name" placeholder="First Name" name="first_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Last Name" placeholder="Last Name" name="last_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="email" placeholder="Email (e.g. panteater@uci.edu)" name="email">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Topic" placeholder="Topic (e.g. Dynamic Programming)" name="topic">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="tel" placeholder="Time Availability (e.g. T/TH 2-4pm)" name="availability">
+                                          </div>
+                                        </div>
+     
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-default">Save</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/web_dev.png" alt="">
+                    <div class="caption">
+                        <h2>CS 122B</h2>
+                        <h5>Winter 2016</h5>
+                        <p>Projects in Databases and Web Applications</p>
+
+                        
+                            <form action="display_students.php" method="post" class="form-inline">
+                                <input type="hidden" name="class_name" value="CS 122B">
+                                <button type="submit" class="btn btn-primary">Buddies</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal122B">Join</button>
+                            </form>
+                            
+                            
+                            
+                            
+                            <!-- Modal -->
+                            <div id="myModal122B" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Information</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            
+                                                
+                                            <br>
+                                    <form action="add_student-1.1.php" method="post">
+    
+                                            <!-- Form  -->
+                                            <div class="form-group row">
+                                                <div class="col-xs-12">
+                                                    <input class="form-control" type="Class Name" value="CS 122B" name="class_name" readonly>
+                                                </div>
+                                            </div>    
+                                            
+                                            <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="First Name" placeholder="First Name" name="first_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Last Name" placeholder="Last Name" name="last_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="email" placeholder="Email (e.g. panteater@uci.edu)" name="email">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Topic" placeholder="Topic (e.g. Dynamic Programming)" name="topic">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="tel" placeholder="Time Availability (e.g. T/TH 2-4pm)" name="availability">
+                                          </div>
+                                        </div>
+     
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-default">Save</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/ai.png" alt="">
+                    <div class="caption">
+                        <h2>CS 171</h2>
+                        <h5>Winter 2016</h5>
+                        <p>Introduction to Artificial Intelligence</p>
+                        <br>
+
+                        
+                            <form action="display_students.php" method="post" class="form-inline">
+                                <input type="hidden" name="class_name" value="CS 171">
+                                <button type="submit" class="btn btn-primary">Buddies</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal171">Join</button>
+                            </form>
+                            
+                            
+                            
+                            
+                            <!-- Modal -->
+                            <div id="myModal171" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Information</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            
+                                                
+                                            <br>
+                                    <form action="add_student-1.1.php" method="post">
+    
+                                            <!-- Form  -->
+                                            <div class="form-group row">
+                                                <div class="col-xs-12">
+                                                    <input class="form-control" type="Class Name" value="CS 171" name="class_name" readonly>
+                                                </div>
+                                            </div>    
+                                            
+                                            <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="First Name" placeholder="First Name" name="first_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Last Name" placeholder="Last Name" name="last_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="email" placeholder="Email (e.g. panteater@uci.edu)" name="email">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Topic" placeholder="Topic (e.g. Dynamic Programming)" name="topic">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="tel" placeholder="Time Availability (e.g. T/TH 2-4pm)" name="availability">
+                                          </div>
+                                        </div>
+     
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-default">Save</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/ml.png" alt="">
+                    <div class="caption">
+                        <h2>CS 178</h2>
+                        <h5>Winter 2016</h5>
+                        <p>Machine Learning and Data Mining</p>
+                        <br>
+
+                        
+                            <form action="display_students.php" method="post" class="form-inline">
+                                <input type="hidden" name="class_name" value="CS 178">
+                                <button type="submit" class="btn btn-primary">Buddies</button>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal178">Join</button>
+                            </form>
+                            
+                            
+                            
+                            
+                            <!-- Modal -->
+                            <div id="myModal178" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Information</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            
+                                                
+                                            <br>
+                                    <form action="add_student-1.1.php" method="post">
+    
+                                            <!-- Form  -->
+                                            <div class="form-group row">
+                                                <div class="col-xs-12">
+                                                    <input class="form-control" type="Class Name" value="CS 178" name="class_name" readonly>
+                                                </div>
+                                            </div>    
+                                            
+                                            <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="First Name" placeholder="First Name" name="first_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Last Name" placeholder="Last Name" name="last_name">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="email" placeholder="Email (e.g. panteater@uci.edu)" name="email">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="Topic" placeholder="Topic (e.g. Dynamic Programming)" name="topic">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <div class="col-xs-12">
+                                            <input class="form-control" type="tel" placeholder="Time Availability (e.g. T/TH 2-4pm)" name="availability">
+                                          </div>
+                                        </div>
+     
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-default">Save</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+    </div>
+ 
+    
+
+    <hr>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="contactUs.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Created by WJL, JY, EA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
