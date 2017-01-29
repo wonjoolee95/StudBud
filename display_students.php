@@ -94,7 +94,7 @@
             // Credentials
             $servername = "localhost";
             $username = "studbudx_root";
-            $password = "!dldnjswnWkdJeromewjlee95";
+            $password = ;
             $dbname = "studbudx_studbud";
 
             // Create connection
